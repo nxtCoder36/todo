@@ -5,12 +5,27 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --harmony ./src/server.js"
+    "dev": "node --harmony ./src/server.js --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.0.5",
+    "nanoid": "^4.0.2",
+    "ws": "^8.13.0"
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist/server",
+    "strict": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   }
 }
